@@ -14,16 +14,16 @@
     <body>
         <button id="open-modal">Open Modal</button>
         <div class="overlay">
-            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
                 <h1 id="modal-title">Save 15% by signing up for our newsletter</h1>
                 <form action="#">
                     <label for="email">Email: </label>
                     <input id="email" type="email"></input>
-                    <button type="submit">Submit</button>
+                    <button id="submit-modal" type="submit">Submit</button>
                 </form>
                 <button id="close-modal" aria-label="Close modal">X</button>
             </div>
         </div>  
-        <script src="/js/modal.js" async defer></script>
+        <script src="js/modal.js" async defer></script>
     </body>
 </html>
