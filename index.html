@@ -3,14 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Accessible Popup Modal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-       
-        hello
+        <button id="open-modal">Open Modal</button>
+        <div class="overlay">
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <h1 id="modal-title">Save 15% by signing up for our newsletter</h1>
+                <form action="#">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email"></input>
+                    <button type="submit">Submit</button>
+                </form>
+                <button id="close-modal" aria-label="Close modal">X</button>
+            </div>
+        </div>  
         <script src="/js/modal.js" async defer></script>
     </body>
 </html>
