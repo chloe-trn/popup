@@ -5,6 +5,11 @@ let overlay = document.querySelector('.overlay')
 let modal = document.querySelector('.modal')
 let lastFocusedElement
 
+window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+    openModal();
+  }); 
+
 openBtn.addEventListener("click", openModal)
 closeBtn.addEventListener("click", closeModal)
 submitBtn.addEventListener("click", closeModal)
